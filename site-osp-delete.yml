@@ -1,0 +1,8 @@
+- hosts: workstation
+  become: yes
+  
+  tasks:
+  - debug:
+    msg: "skip deleting"
+  #roles:
+  #  - osp-instance-delete
